@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window Information!</title>
+    <script>
+        function displayWindowInfo() {
+            var location = document.getElementById("location");
+            location.innerHTML =
+                "This page's full URL: " + window.location.href + "<br>" +
+                "This page's protocol: " + window.location.protocol;
+            var browser = document.getElementById("browser");
+            browser.innerHTML =
+                "Browser name: " + window.navigator.userAgent;
+            var screen = document.getElementById("screen");
+            screen.innerHTML =
+                "Screen width: " + window.screen.availWidth + "pixels<br>" +
+                "Screen height: " + window.screen.availHeight + "pixels";
+        }
+
+    </script>
+</head>
+<body onload="displayWindowInfo()">
+<h2>Window Object Information</h2>
+<p id="location"></p>
+<p id="browser"></p>
+<p id="screen"></p>
+
+</body>
+</html>

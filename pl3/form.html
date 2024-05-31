@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form!</title>
+    <script src="formScript.js"></script>
+</head>
+<body>
+<form id="form">
+    <label for="first">First Name:</label>
+    <input type="text" id="first" size="15" autofocus><br>
+    <label for="last">Last Name:</label>
+    <input type="text" id="last" size="15"><br>
+    <input type="button" value="Generate Email" onclick="generateEmail(this.form)"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" size="30"><br>
+    <p>Gender</p>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="other">Other</label>
+    <input type="radio" id="other" name="gender" value="other"><br>
+    <label for="planet">Choose Your Planet:</label>
+    <select id="planet" name="planet">
+        <option value="mercury">Mercury</option>
+        <option value="venus">Venus</option>
+        <option value="earth">Earth</option>
+        <option value="mars">Mars</option>
+        <option value="jupiter">Jupiter</option>
+        <option value="saturn">Saturn</option>
+        <option value="uranus">Uranus</option>
+        <option value="neptune">Neptune</option>
+    </select><br>
+    <p>Chose Your Weapons:</p>
+    <input type="checkbox" id="gun" name="gun" value="gun">
+    <label for="gun">Laser Gun</label><br>
+    <input type="checkbox" id="sword" name="sword" value="sword">
+    <label for="sword">Electric Sword</label><br>
+    <input type="checkbox" id="shield" name="shield" value="shield">
+    <label for="shield">Tower Shield</label><br>
+    <input type="checkbox" id="grenade" name="grenade" value="grenade">
+    <label for="grenade">Flash Grenade</label><br>
+    <input type="submit" value="Submit" onclick="showAlert(this.form)">
+</form>
+</body>
+</html>
