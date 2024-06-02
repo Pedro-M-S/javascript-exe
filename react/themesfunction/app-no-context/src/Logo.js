@@ -1,0 +1,20 @@
+import React from "react";
+import PropTypes from "prop-types";
+import logo from "./logo.svg";
+
+const Logo = (props) => {
+  const { logoBackground } = props;
+  return (
+    <img
+      src={logo}
+      className="app-logo"
+      alt="logo"
+      style={{ backgroundColor: logoBackground }}
+    />
+  );
+};
+
+Logo.propTypes = {
+  logoBackground: PropTypes.string.isRequired,
+};
+export default Logo;
